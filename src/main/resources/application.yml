@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: QuoraApp
+  data:
+    mongodb:
+      uri: ${MONGODB_URL}
+      auto-index-creation: true
+      database: quora_dp
+
+
+
+server:
+  port: ${PORT:8080}
