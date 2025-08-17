@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @Builder
 @Getter
 @Setter
-@Document(collation = "questions")
+@Document(collection = "questions")
 
 public class Question extends Base{
 
