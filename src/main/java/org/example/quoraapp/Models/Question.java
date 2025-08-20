@@ -30,4 +30,5 @@ public class Question extends Base{
     private String authorId ;
 
 
+    private Integer viewCount;
 }

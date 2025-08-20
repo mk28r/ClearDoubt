@@ -9,7 +9,7 @@ import reactor.core.publisher.Flux;
 
 import java.time.LocalDateTime;
 
-
+@Repository
 public interface QuestionRepository extends ReactiveMongoRepository<Question, String> {
     @Query("{ '$or': [ { 'title': { $regex: ?0, $options: 'i'} }, { 'content' : { $regex: ?0, $options: 'i' } } ] }")
     Flux<Question> findByTitleOrContentContainingIgnoreCase(String searchTerm, Pageable pageable);

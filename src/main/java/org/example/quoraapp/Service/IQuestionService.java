@@ -12,4 +12,7 @@ public interface IQuestionService {
     Flux<QuestionResponseDTO> searchQuestions(String searchTerm , int offset, int page );
 
     Flux<QuestionResponseDTO> getAllQuestions(String cursor, int size);
+
+    public Mono<QuestionResponseDTO> getQuestionById(String id); // update view count
+
 }
